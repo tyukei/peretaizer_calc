@@ -1,1 +1,0 @@
-# peretaizer_calc
