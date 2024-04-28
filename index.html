@@ -21,19 +21,23 @@
     </style>
 </head>
 <body>
-    <h1>式の計算</h1>
-    <p>√{rw - w^2/4 + 2r - w} の結果を表示します。</p>
+    <h1>三角関数による座標の計算</h1>
+    <p>r cos(w + 12) = y と r sin(w + 12) = z の計算結果を表示します。</p>
     <input type="number" id="inputR" placeholder="rの値を入力">
-    <input type="number" id="inputW" placeholder="wの値を入力">
+    <input type="number" id="inputW" placeholder="wの値を入力（度数法）">
     <button onclick="calculate()">計算する</button>
-    <p id="result">結果: </p>
+    <p id="resultY" class="result">Y の結果: </p>
+    <p id="resultZ" class="result">Z の結果: </p>
 
     <script>
         function calculate() {
             var r = parseFloat(document.getElementById("inputR").value);
             var w = parseFloat(document.getElementById("inputW").value);
-            var result = Math.sqrt(r * w - (w * w) / 4 + 2 * r - w -1);
-            document.getElementById("result").innerText = "結果: " + result.toFixed(2);
+            var wRadians = (w + 12) * Math.PI / 180; // 度数法からラジアンへの変換
+            var y = r * Math.cos(wRadians);
+            var z = r * Math.sin(wRadians);
+            document.getElementById("resultY").innerText = "Y の結果: " + y.toFixed(2);
+            document.getElementById("resultZ").innerText = "Z の結果: " + z.toFixed(2);
         }
     </script>
 </body>
