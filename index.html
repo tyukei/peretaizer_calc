@@ -21,21 +21,23 @@
     </style>
 </head>
 <body>
-    <p>ペレタイザー再研磨における砥石の汎用的位置座標の導出過程</p>
-    <p>X(ワーク座標)</p>
-    <input type="number" id="inputX" placeholder="Xの初期値を入力" value=0>  
-    <p>Y(ワーク座標)</p>
-    <input type="number" id="inputY" placeholder="Yの初期値を入力" value=0> 
-    <p>Z(zのワーク座標)</p>
-    <input type="number" id="inputZ" placeholder="Zの初期値を入力" value=0> 
-    <p>K(楕円の角度)</p>
-    <input type="number" id="inputK" placeholder="Kの値を入力" value=9.7>
-    <p>j(バッファ)</p>
-    <input type="number" id="inputJ" placeholder="Jの値を入力" value=1>   
-    <p>r(品物の当たる半径)</p>
-    <input type="number" id="inputR" placeholder="rの値を入力" value=10>
-    <p>a(品物の当たる角度)</p>
-    <input type="number" id="inputa" placeholder="aの値を入力（度数法）" value=10>
+    <h1>ペレタイザー再研磨における砥石の汎用的位置座標の導出過程</h1>
+    <div class="column">
+        <div><p>X(ワーク座標)</p>
+            <input type="number" id="inputX" placeholder="Xの初期値を入力" value="0"></div>
+        <div><p>Y(ワーク座標)</p>
+            <input type="number" id="inputY" placeholder="Yの初期値を入力" value="0"></div>
+        <div><p>Z(zのワーク座標)</p>
+            <input type="number" id="inputZ" placeholder="Zの初期値を入力" value="0"></div>
+        <div><p>K(楕円の角度)</p>
+            <input type="number" id="inputK" placeholder="Kの値を入力" value="9.7"></div>
+        <div><p>j(バッファ)</p>
+            <input type="number" id="inputJ" placeholder="Jの値を入力" value="1"></div>
+        <div><p>r(品物の当たる半径)</p>
+            <input type="number" id="inputR" placeholder="rの値を入力" value="10"></div>
+        <div><p>a(品物の当たる角度)</p>
+            <input type="number" id="inputa" placeholder="aの値を入力（度数法）" value="10"></div>
+    </div>
     <button onclick="calculate()">計算する</button>
     <p id="resultX" class="result">X の結果: </p>
     <p id="resultY" class="result">Y の結果: </p>
