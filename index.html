@@ -5,17 +5,17 @@
     <title>数式の計算</title>
     <style>
         body {
-            font-size: 16px; /* 基本の文字サイズ */
+            font-size: 36px; /* 基本の文字サイズ */
         }
         h1 {
-            font-size: 24px; /* 見出しの文字サイズ */
+            font-size: 48px; /* 見出しの文字サイズ */
         }
         input, button {
-            font-size: 20px; /* 入力フィールドとボタンの文字サイズ */
+            font-size: 36px; /* 入力フィールドとボタンの文字サイズ */
             padding: 5px 10px; /* パディングで余白を追加 */
         }
         #result {
-            font-size: 20px; /* 結果表示の文字サイズ */
+            font-size: 36px; /* 結果表示の文字サイズ */
             color: blue; /* 文字色 */
         }
     </style>
@@ -32,7 +32,7 @@
         function calculate() {
             var r = parseFloat(document.getElementById("inputR").value);
             var w = parseFloat(document.getElementById("inputW").value);
-            var result = Math.sqrt(r * w - (w * w) / 4 + 2 * r - w);
+            var result = Math.sqrt(r * w - (w * w) / 4 + 2 * r - w -1);
             document.getElementById("result").innerText = "結果: " + result.toFixed(2);
         }
     </script>
