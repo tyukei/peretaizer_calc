@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>計算ページ</title>
+</head>
+<body>
+    <h1>数値の計算</h1>
+    <p>x - yの結果を表示します。</p>
+    <input type="number" id="inputX" placeholder="xの値を入力">
+    <input type="number" id="inputY" placeholder="yの値を入力">
+    <button onclick="calculate()">計算する</button>
+    <p id="result">結果: </p>
+
+    <script>
+        function calculate() {
+            var x = document.getElementById("inputX").value;
+            var y = document.getElementById("inputY").value;
+            var result = x - y;
+            document.getElementById("result").innerText = "結果: " + result;
+        }
+    </script>
+</body>
+</html>
