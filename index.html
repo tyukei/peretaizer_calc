@@ -44,7 +44,7 @@
             var dy1 = r * Math.cos(wRadians);
             var dz1 = r * Math.sin(wRadians);
             var j = parseFloat(document.getElementById("inputJ").value);
-            var dy2 = -(r + j);
+            var dy2 = -(r - j);
             var x = parseFloat(document.getElementById("inputX").value);
             var y = parseFloat(document.getElementById("inputY").value) + dy1 + dy2;
             var z = parseFloat(document.getElementById("inputZ").value) + dz1;
